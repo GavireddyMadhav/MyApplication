@@ -33,6 +33,16 @@ import { StaffformComponent } from './staffform/staffform.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { ModalModule } from 'ngb-modal';
 
+import { ProvincemasterComponent } from './provincemaster/provincemaster.component';
+import { ProvincemasterformComponent } from './provincemasterform/provincemasterform.component';
+import { CountrymasterComponent } from './countrymaster/countrymaster.component';
+import { CountrymasterformComponent } from './countrymasterform/countrymasterform.component';
+import { CitymasterComponent } from './citymaster/citymaster.component';
+import { CitymasterformComponent } from './citymasterform/citymasterform.component';
+import { SupportComponent } from './support/support.component';
+import { SupportformComponent } from './supportform/supportform.component';
+import { MiletterComponent } from './miletter/miletter.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,6 +70,17 @@ import { ModalModule } from 'ngb-modal';
     ViewdetailsComponent,
     CompanyformComponent,
     StaffformComponent,
+ 
+    ProvincemasterComponent,
+    ProvincemasterformComponent,
+    CountrymasterComponent,
+    CountrymasterformComponent,
+    CitymasterComponent,
+    CitymasterformComponent,
+    SupportComponent,
+    SupportformComponent,
+    MiletterComponent,
+   
    
    
   

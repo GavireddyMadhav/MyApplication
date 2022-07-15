@@ -49,12 +49,13 @@
             <div class="col-lg-8"></div>
 
             <div class="col0lg-2">
-                <button   *ngIf="id==undefined||id==null" (click)="submit()"routerLink="/Company" class="addnew">Submit</button>
-                <button   *ngIf="id!=undefined||id!=null" (click)="edit()"routerLink="/Company" class="addnew">update</button>
+                <button *ngIf="id==undefined||id==null" (click)="submit()" routerLink="/Company"
+                    class="addnew">Submit</button>
+                <button *ngIf="id!=undefined||id!=null" (click)="edit()" routerLink="/Company"
+                    class="addnew">update</button>
             </div>
             <div class="col0lg-2">
                 <button routerLink="/Company" class="addnew">Cancle</button>
-                <btn></btn>
             </div>
 
         </div>

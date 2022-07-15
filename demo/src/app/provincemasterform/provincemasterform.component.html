@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <form #provinceForm="ngForm">
+        <br>
+        <br>
+
+        <label class="headings">Province Details</label>
+        <br>
+        <br>
+        <div class="card">
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="Country">Country</label>
+                    <span class="required">*</span>
+                    <select name="countryID" id="countryID" class="form-control" [(ngModel)]="countryID" required
+                        style="background-color:lightgray;">
+                        <option value="">Select Country</option>
+                        <option *ngFor="let list of master" value="{{list.id}}">{{list.countryname}}</option>
+                    </select>
+
+                </div>
+
+                <div class="col-lg-2">
+                    <label for="Country">Province</label>
+                    <span class="required">*</span>
+                    <input type="text" class="form-control" placeholder="Province" id="Pname" name="Pname" required
+                        [(ngModel)]="Pname">
+                </div>
+
+
+                <div class="col-lg-4">
+                    <label for="Description">Description</label>
+                    <span class="required">*</span>
+                    <textarea type="text" class="form-control" [(ngModel)]="description" name="description"
+                        placeholder="Description" required rows="2"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8"></div>
+                <div class="col-lg-2">
+                    <button *ngIf="id==undefined || id==null" (click)="Submit()" class="addnew"
+                        [disabled]="provinceForm.form.invalid">Submit</button>
+                    <button *ngIf="id!=undefined || id!=null" (click)="edit()" class="addnew">Update</button>
+
+
+
+                </div>
+                <div class="col-lg-2">
+                    <button routerLink="/Provincemaster" class="addnew">Cancle</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

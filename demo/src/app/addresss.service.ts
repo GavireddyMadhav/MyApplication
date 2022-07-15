@@ -148,10 +148,7 @@ public GetCountry(){
 }
 
 
-public GetProvince(){
-  debugger
- return this.http.get<any[]>(this.host1 +"Master/GetProvince")
-}
+
 
 public GetAddressType(){
   debugger
@@ -186,6 +183,70 @@ public GetSetupCount(){
   debugger
  return this.http.get<any[]>(this.host1 +"Master/GetSetupCount")
 }
+
+
+
+
+public GetCountryMaster(){
+  debugger
+ return this.http.get<any[]>(this.host +"Master/GetCountryMaster")
+}
+
+public InsertCountryMaster(json:any){
+  return this.http.post(this.host +"Master/InsertCountryMaster",json)
+}
+
+public UpdateCountryMaster(id:any){
+  return this.http.post(this.host+"Master/UpdateCountryMaster",id)
+}
+
+public DeleteCountryMaster(id:any){
+  debugger
+ return this.http.get<any[]>(this.host+"Master/DeleteCountryMaster?ID="+id)
+}
+
+public GetProvince(){
+  
+ return this.http.get<any[]>(this.host1 +"Master/GetProvince")
+}
+
+public InsertProvince(json:any){
+  return this.http.post(this.host +"Master/InsertProvince",json)
+}
+
+
+public UpdateProvince(id:any){
+  return this.http.post(this.host+"Master/UpdateProvince",id)
+}
+
+public DeleteProvince(id:any){
+ return this.http.get<any[]>(this.host+"Master/DeleteProvince?ID="+id)
+}
+
+
+public GetCity(){
+  debugger
+ return this.http.get<any[]>(this.host1 +"Master/GetCity")
+}
+
+public InsertCity(json:any){
+  return this.http.post(this.host +"Master/InsertCity",json)
+}
+
+
+public UpdateCity(id:any){
+  return this.http.post(this.host+"Master/UpdateCity",id)
+}
+
+public DeleteCity(id:any){
+ return this.http.get<any[]>(this.host+"Master/DeleteCity?ID="+id)
+}
+
+public GetSupport(){
+  debugger
+ return this.http.get<any[]>(this.host1 +"Master/GetSupport")
+}
+
 
 
 

@@ -44,10 +44,13 @@ export class HolidaysComponent implements OnInit {
             'Deleted!',
             'Your file has been deleted.',
             'success'
+            
           )
+          this.GetHolidays()
+
         }
       })
-      this.GetHolidays()
+    
     })
   }
   edit(id:any){

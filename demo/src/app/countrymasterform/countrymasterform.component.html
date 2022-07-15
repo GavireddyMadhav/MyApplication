@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <form #counrtyForm="ngForm">
+        <br>
+        <br>
+        <label class="headings">Country Details</label>
+        <br>
+        <br>
+        <div class="card">
+            <div class="row">
+                <div class="col-lg-2">
+                    <label for="Country">Country</label>
+                    <span class="required">*</span>
+                    <input type="text" class="form-control" placeholder="country" [(ngModel)]="Countryname" name="Countryname" required>
+                </div>
+
+                <div class="col-lg-4">
+                    <label for="Description">Description</label>
+                    <span class="required">*</span>
+                    <textarea type="text" class="form-control" placeholder="Description"  rows="4"
+                        [(ngModel)]="Descriptio" name="Descriptio" required></textarea >
+            </div>
+          </div>
+    
+
+         <div class="row">
+            <div class="col-lg-8"></div>
+            <div class="col-lg-2">
+                <button *ngIf="id==undefined || id==null" (click)="submit()" class="addnew" [disabled]="counrtyForm.form.invalid" >Submit</button>
+                <button *ngIf="id!=undefined || id!=null"  (click)="edit()"class="addnew" >Update</button>
+
+            </div>
+            <div class="col-lg-2">
+                <button  routerLink="/Countrymaster" class="addnew">Cancle</button>
+            </div>
+        </div>
+     </div>
+    </form>
+</div>

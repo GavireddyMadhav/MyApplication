@@ -145,3 +145,12 @@ a:hover{
 {
   background-color: transparent !important;
 }
+.required{
+  color:red
+
+  
+}
+
+button:disabled{
+  cursor: no-drop;
+}

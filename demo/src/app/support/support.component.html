@@ -1,0 +1,58 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-11">
+            <br>
+            <label class="headings">Support Ticket Details</label>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-lg-3">
+            <label class="headings">SHOWING 2 RESULTS</label>
+        </div>
+       
+        <div class="col-lg-9">
+            <button  routerLink="/Supportform"class="addnew">Add NEW</button>
+        </div>
+    </div>
+    <br>
+    <div class="row ">
+        <div class="col-lg-12" style="overflow: auto">
+            <div>
+                <table class="table">
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Type Of Issue</th>
+                        <th>Priority</th>
+                        <th>Comments</th>
+                        <th>Attachment</th>
+                        <th>Status </th>
+                        
+
+                    </tr>
+                    <tr *ngFor="let list of support">
+
+                        <td>{{list.date}}</td>
+                        <td>{{list.time}}</td>
+                        <td>{{list.issue}}</td>
+                        <td>{{list.priority}}</td>
+                        <td>{{list.comments}}</td>
+                        <td>{{list.attachment}}</td>
+                        <td>{{list.status}}</td>
+
+                       
+                    </tr>
+                  
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>

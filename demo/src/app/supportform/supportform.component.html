@@ -1,0 +1,75 @@
+<div class="container-fluid">
+    <form #cityForm="ngForm">
+    <br>
+    <br>
+    <label class="headings">Support Tickets</label>
+    <br>
+    <br>
+    <div class="card">
+        <div class="row">
+
+            <div class="col-lg-3">
+                <label for="Country">Date</label>
+                <input type="date" class="form-control">
+            </div>
+
+            <div class="col-lg-3">
+                <label for="Country">Time</label>
+                <input type="time" class="form-control">
+            </div>
+
+
+
+            <div class="col-lg-3">
+                <label for="Country">Type of issue</label>
+              
+                <select name="" id="" class="form-control">
+                    <option value="">Select Issue</option>
+                </select>
+            </div>
+
+
+            <div class="col-lg-3">
+                <label for="Description">Priority</label>
+              <select name="" id="" class="form-control">
+                  <option value="">Select priority Type</option>
+              </select>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-lg-3">
+               <label for="">UpLoadScrrenshot</label>
+               <ngx-dropzone (change)="onSelect($event)" style="height: 60px;">
+                <ngx-dropzone-label>please Attach photo</ngx-dropzone-label>
+                <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+                    <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+                </ngx-dropzone-preview>
+            </ngx-dropzone>
+               
+            </div>
+            <div class="col-lg-4">
+                <label for="Description">Commants</label>
+                <textarea type="text" class="form-control" placeholder="Commants" rows="4"
+                   ></textarea>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-lg-8"></div>
+            <div class="col-lg-2">
+                <button  (click)="save()" class="addnew" >Save</button>
+                
+            </div>
+            <div class="col-lg-2">
+                <button routerLink="/Support" class="addnew">Cancle</button>
+            </div>
+        </div>
+    </div>
+</form>
+</div>

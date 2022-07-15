@@ -24,7 +24,15 @@ import { ViewdetailsComponent } from './viewdetails/viewdetails.component';
 import { CompanyformComponent } from './companyform/companyform.component';
 import { StaffformComponent } from './staffform/staffform.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { ProvincemasterComponent } from './provincemaster/provincemaster.component';
+import { ProvincemasterformComponent } from './provincemasterform/provincemasterform.component';
+import { CountrymasterComponent } from './countrymaster/countrymaster.component';
+import { CountrymasterformComponent } from './countrymasterform/countrymasterform.component';
+import { CitymasterComponent } from './citymaster/citymaster.component';
+import { CitymasterformComponent } from './citymasterform/citymasterform.component';
+import { SupportComponent } from './support/support.component';
+import { SupportformComponent } from './supportform/supportform.component';
+import { MiletterComponent } from './miletter/miletter.component';
 
 
 
@@ -96,6 +104,35 @@ const routes: Routes = [
 {path:'Staff',component:StaffComponent},
 {path:'Staffform',component:StaffformComponent},
 {path:'Staffform/:id',component:StaffformComponent},
+
+
+
+
+{path:'',redirectTo:'',pathMatch:'full'},
+{path:'Provincemaster',component:ProvincemasterComponent},
+{path:'Provincemasterform',component:ProvincemasterformComponent},
+{path:'Provincemasterform/:id',component:ProvincemasterformComponent},
+
+{path:'',redirectTo:'',pathMatch:'full'},
+{path:'Countrymaster',component:CountrymasterComponent},
+{path:'Countrymasterform',component:CountrymasterformComponent},
+{path:'Countrymasterform/:id',component:CountrymasterformComponent},
+
+{path:'',redirectTo:'',pathMatch:'full',},
+{path:'Citymaster',component:CitymasterComponent},
+{path:'Citymasterform',component:CitymasterformComponent},
+{path:'Citymasterform/:id',component:CitymasterformComponent},
+
+{path:'',redirectTo:'',pathMatch:'full'},
+{path:'Support',component:SupportComponent},
+{path:'Supportform',component:SupportformComponent},
+{path:'Supportform/:id',component:SupportformComponent},
+
+{path:'Miletter',component:MiletterComponent}
+
+
+
+
 
 
 
